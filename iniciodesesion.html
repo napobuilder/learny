@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta en Learny</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background-image: linear-gradient(to right, #6D28D9, #D946EF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        /* Estilo para notificaciones */
+        #notification {
+            transition: opacity 0.5s, transform 0.5s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="min-h-screen flex items-center justify-center p-4 relative">
+        
+        <!-- Contenedor de Notificaciones -->
+        <div id="notification" class="fixed top-5 right-5 bg-white p-4 rounded-lg shadow-lg border-l-4 opacity-0 transform translate-y-10 z-50">
+            <p id="notification-message"></p>
+        </div>
+
+        <div class="w-full max-w-5xl grid md:grid-cols-2 bg-white rounded-2xl shadow-2xl overflow-hidden">
+            
+            <!-- Columna Izquierda: Formulario de Registro -->
+            <div class="p-8 md:p-12">
+                <div class="flex items-center gap-3 mb-8">
+                    <img src="https://i.imgur.com/NcZCF1f.png" alt="Learny Logo" class="h-8 w-8">
+                    <span class="text-xl font-bold text-gray-800">Learny</span>
+                </div>
+                
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Crea tu cuenta</h2>
+                <p class="text-gray-600 mb-8">Y empieza a dominar habilidades reales hoy mismo.</p>
+
+                <!-- Opciones de Registro Social -->
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <button id="google-signup" class="flex items-center justify-center gap-2 py-2.5 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors">
+                        <svg class="h-5 w-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.222,0-9.657-3.356-11.303-8H6.306C9.656,39.663,16.318,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571l6.19,5.238C41.38,36.138,44,30.668,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path></svg>
+                        <span class="text-sm font-medium text-gray-700">Google</span>
+                    </button>
+                    <button id="github-signup" class="flex items-center justify-center gap-2 py-2.5 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors">
+                        <svg class="h-5 w-5 text-gray-800" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span class="text-sm font-medium text-gray-700">GitHub</span>
+                    </button>
+                </div>
+                
+                <div class="flex items-center my-6">
+                    <hr class="w-full border-gray-300">
+                    <span class="px-2 text-sm text-gray-500">O</span>
+                    <hr class="w-full border-gray-300">
+                </div>
+
+                <!-- Formulario -->
+                <form id="signup-form">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+                            <input type="text" name="name" id="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                            <input type="password" name="password" id="password" autocomplete="new-password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-transform hover:scale-105">
+                                Crear mi cuenta gratis
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <p class="mt-6 text-center text-sm text-gray-600">
+                    ¿Ya tienes una cuenta?
+                    <a href="#" class="font-bold text-purple-600 hover:text-purple-500">Inicia sesión</a>
+                </p>
+                 <p class="mt-4 text-xs text-center text-gray-500">
+                    Al crear una cuenta, aceptas nuestros
+                    <a href="#" class="underline hover:text-gray-700">Términos de Servicio</a> y 
+                    <a href="#" class="underline hover:text-gray-700">Política de Privacidad</a>.
+                </p>
+            </div>
+
+            <!-- Columna Derecha: Beneficios y Branding -->
+            <div class="hidden md:block bg-[#1E1B3A] text-white p-12 relative overflow-hidden">
+                <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-gradient-to-tr from-pink-500 to-purple-600 rounded-full opacity-30 blur-3xl"></div>
+                <div class="relative z-10 flex flex-col justify-center h-full">
+                    <h3 class="text-3xl font-black leading-snug">
+                        Únete a la revolución del aprendizaje <span class="gradient-text">curado</span>.
+                    </h3>
+                    <p class="text-gray-400 mt-4 mb-8">
+                        Estás a un paso de acceder a rutas de aprendizaje diseñadas por expertos.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span><strong class="text-white">Contenido de élite:</strong> Solo los mejores videos y recursos, sin relleno.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span><strong class="text-white">Gamificación:</strong> Gana puntos, sube de nivel y haz que aprender sea adictivo.</span>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="h-6 w-6 text-green-400 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            <span><strong class="text-white">Certificados verificables:</strong> Valida tus nuevas habilidades y potencia tu CV.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Elementos del DOM
+        const signupForm = document.getElementById('signup-form');
+        const googleSignupBtn = document.getElementById('google-signup');
+        const githubSignupBtn = document.getElementById('github-signup');
+        const notification = document.getElementById('notification');
+        const notificationMessage = document.getElementById('notification-message');
+
+        // Función para mostrar notificaciones y redirigir
+        function showAndRedirect(message) {
+            notificationMessage.textContent = message;
+            notification.className = notification.className.replace(/border-red-500|border-green-500/, '');
+            notification.classList.add('border-green-500'); // Always show success style
+            notification.classList.remove('opacity-0', 'translate-y-10');
+            
+            setTimeout(() => {
+                notification.classList.add('opacity-0', 'translate-y-10');
+                window.location.href = 'dashboard.html'; // Redirect after notification fades
+            }, 1000); // Show notification for 1 second before redirecting
+        }
+
+        // Simular Registro con Email y Contraseña
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            showAndRedirect(`¡Bienvenido, ${name || 'usuario'}! Redirigiendo al dashboard...`);
+        });
+
+        // Simular Registro con Google
+        googleSignupBtn.addEventListener('click', () => {
+            showAndRedirect('¡Bienvenido! Redirigiendo al dashboard...');
+        });
+
+        // Simular Registro con GitHub
+        githubSignupBtn.addEventListener('click', () => {
+            showAndRedirect('¡Bienvenido! Redirigiendo al dashboard...');
+        });
+    </script>
+</body>
+</html>
