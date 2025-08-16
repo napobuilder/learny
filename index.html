@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learny - Expert Courses to Master Real-World Skills</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .main-container-border {
+            border: 1px solid transparent;
+            background: linear-gradient(#1E1B3A, #1E1B3A) padding-box, linear-gradient(120deg, #4F46E5, #A855F7) border-box;
+        }
+        .gradient-text {
+            background-image: linear-gradient(to right, #6D28D9, #D946EF);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Contenedor Principal con Borde Degradado -->
+    <div class="p-2 sm:p-4 bg-white">
+        <div class="w-full max-w-7xl mx-auto bg-[#1E1B3A] rounded-3xl text-gray-200 p-6 md:p-12 shadow-2xl shadow-purple-900/20 main-container-border">
+            <!-- NAVEGACIÓN -->
+            <header class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.imgur.com/NcZCF1f.png" alt="Learny Logo" class="h-8 w-8">
+                    <span class="text-xl font-bold text-white">Learny</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">Courses</a>
+                    <a href="#" class="hover:text-white transition-colors">How it works</a>
+                    <a href="#" class="hover:text-white transition-colors">Pricing</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="text-sm font-medium text-white hover:text-purple-300 transition-colors">Log In</button>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors flex items-center gap-2">
+                        Start Learning
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- SECCIÓN HERO -->
+            <main class="mt-16 md:mt-24 grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+                    <div class="flex justify-center md:justify-start items-center gap-3">
+                        <div class="flex -space-x-2">
+                            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-gray-800" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Student Avatar 1">
+                            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-gray-800" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Student Avatar 2">
+                            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-gray-800" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="Student Avatar 3">
+                        </div>
+                        <span class="text-sm text-gray-400 font-medium">Join +10,000 students</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-black text-white leading-tight">
+                        Expert courses to master 
+                        <span class="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">real-world skills</span>
+                    </h1>
+                    <p class="text-gray-400 max-w-md">
+                        Forget searching through thousands of tutorials. Our experts curate the best content and design effective learning paths, with gamification and certificates that boost your career.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
+                        <button class="bg-white text-gray-900 font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition-transform hover:scale-105">
+                            Explore courses &rarr;
+                        </button>
+                        <button class="bg-transparent border-2 border-gray-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 hover:border-gray-500 transition-colors">
+                            See how it works
+                        </button>
+                    </div>
+                </div>
+                <div class="relative w-full h-auto min-h-[300px] flex items-center justify-center">
+                    <img src="https://i.imgur.com/46BENBX.png" 
+                         alt="3D illustration of a web design interface"
+                         class="w-full h-full object-contain rounded-xl transform transition-transform duration-500 hover:rotate-3 hover:scale-105">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-pink-500/20 rounded-full blur-2xl"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- SECCIÓN: CARACTERÍSTICAS -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900">A <span class="gradient-text">superior</span> learning experience</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">You don't just watch videos. You experience learning designed for you to truly master each topic.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all">
+                    <div class="bg-purple-100 text-purple-600 rounded-lg h-12 w-12 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Expert Curation</h3>
+                    <p class="text-gray-600">Our instructors design each syllabus, selecting only the most relevant and high-quality content to build a coherent learning path.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all">
+                    <div class="bg-purple-100 text-purple-600 rounded-lg h-12 w-12 flex items-center justify-center mb-6">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Gamification & Tracking</h3>
+                    <p class="text-gray-600">Advance through modules, complete challenges, earn points, and track your progress in real-time. Learning becomes a game where you always win.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all">
+                    <div class="bg-purple-100 text-purple-600 rounded-lg h-12 w-12 flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Verifiable Certificates</h3>
+                    <p class="text-gray-600">Upon completion, get a certificate that validates your knowledge. A tangible achievement to share on your LinkedIn profile and add to your CV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: HOW IT WORKS -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900">Your journey to mastery <span class="gradient-text">in 3 steps</span></h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">We've simplified the path so you can focus on what matters: learning.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-600 text-white rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Explore and Choose</h3>
+                    <p class="text-gray-600">Browse our catalog of learning paths and choose the skill you want to master.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-600 text-white rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Learn and Compete</h3>
+                    <p class="text-gray-600">Follow the syllabus, complete modules, overcome challenges, and earn points to climb the leaderboard.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-600 text-white rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Certify and Grow</h3>
+                    <p class="text-gray-600">Complete the path, get your verifiable certificate, and share it to boost your professional profile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: FEATURED COURSES -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900">Start learning with our <span class="gradient-text">popular paths</span></h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Expert-designed learning paths to take you from zero to hero.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card 1 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="[Image of code on a screen]" class="h-56 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-purple-600">Web Development</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">From Zero to Full Stack with JavaScript</h3>
+                        <p class="text-gray-600 text-sm mb-4">Master frontend with React and backend with Node.js through the best tutorials on the web.</p>
+                        <button class="w-full bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">View Learning Path</button>
+                    </div>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop" alt="[Image of social media logos]" class="h-56 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-purple-600">Digital Marketing</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">Social Media Marketing 2025</h3>
+                        <p class="text-gray-600 text-sm mb-4">Learn to create successful campaigns on Instagram, TikTok, and X with content curated by industry experts.</p>
+                        <button class="w-full bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">View Learning Path</button>
+                    </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop" alt="[Image of a user interface]" class="h-56 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-purple-600">Product Design</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">UI/UX Design with Figma</h3>
+                        <p class="text-gray-600 text-sm mb-4">Become a professional interface designer by learning from the best content creators.</p>
+                        <button class="w-full bg-purple-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">View Learning Path</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: TESTIMONIALS -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900">Don't just take our word for it, <span class="gradient-text">trust them</span></h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <p class="text-gray-700 mb-6">"Learny changed the game for me. I went from watching random videos to following a clear path that landed me my first job as a frontend developer. Amazing!"</p>
+                    <div class="flex items-center">
+                        <img class="h-12 w-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1887&auto=format&fit=crop" alt="[Profile photo of Ana Gómez]">
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Ana Gómez</p>
+                            <p class="text-sm text-gray-500">Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <p class="text-gray-700 mb-6">"As a manager, I needed to quickly understand digital marketing. Learny's paths are concise, to the point, and use content I already respected. It saved me months of searching."</p>
+                    <div class="flex items-center">
+                        <img class="h-12 w-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop" alt="[Profile photo of Carlos Vera]">
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Carlos Vera</p>
+                            <p class="text-sm text-gray-500">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <p class="text-gray-700 mb-6">"The gamification is addictive. Seeing my progress, earning points... it made learning Figma so much more fun and kept me motivated until the end. 100% recommended!"</p>
+                    <div class="flex items-center">
+                        <img class="h-12 w-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop" alt="[Profile photo of Sofía Luna]">
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Sofía Luna</p>
+                            <p class="text-sm text-gray-500">UI/UX Design Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: FINAL CTA (WITH CHANGES) -->
+    <section class="bg-gray-50 py-20 px-4 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative">
+             <div class="absolute -top-12 -left-12 w-32 h-32 bg-pink-500/10 rounded-full blur-2xl -z-10"></div>
+             <div class="absolute -bottom-12 -right-12 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl -z-10"></div>
+             <h2 class="text-4xl md:text-5xl font-black text-gray-900">Transform your career <span class="gradient-text">today</span></h2>
+             <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Join thousands of professionals who are accelerating their learning and achieving their goals with our expert learning paths.</p>
+             <button class="mt-8 bg-purple-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-purple-700 transition-transform hover:scale-105 text-lg">
+                Start learning for free
+             </button>
+             <p class="text-sm text-gray-500 mt-3">No credit card required.</p>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: FOOTER -->
+    <footer class="bg-[#110F24] text-gray-400">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="space-y-4 col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <img src="https://i.imgur.com/NcZCF1f.png" alt="Learny Logo" class="h-8 w-8">
+                        <span class="text-xl font-bold text-white">Learny</span>
+                    </div>
+                    <p class="text-sm">Expert learning paths to master real-world skills.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.48 2.96,10.28 2.38,10V10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16.03 6.02,17.25 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.84C20.33,8.63 20.33,8.42 20.32,8.21C21.17,7.63 21.88,6.87 22.46,6Z"></path></svg></a>
+                        <a href="#" class="hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.11 3.9,21 5,21H19C20.11,21 21,20.11 21,19V5C21,3.89 20.11,3 19,3M8.5,18H6.5V12H8.5V18M7.5,10.8C6.67,10.8 6,10.13 6,9.3C6,8.47 6.67,7.8 7.5,7.8C8.33,7.8 9,8.47 9,9.3C9,10.13 8.33,10.8 7.5,10.8M18,18H16V13.37C16,12.16 15.46,11.78 15,11.78C14.31,11.78 14,12.43 14,13.12V18H12V12H14V13.06C14.35,12.44 14.93,12 15.96,12C17.21,12 18,12.73 18,14.39V18Z"></path></svg></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Solutions</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-base hover:text-white">Learning Paths</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Gamification</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Certificates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-base hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-base hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-base hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center">
+                <p class="text-base">&copy; 2025 Learny. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
